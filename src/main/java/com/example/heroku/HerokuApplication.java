@@ -13,7 +13,7 @@ import java.lang.reflect.Array;
 @Controller
 @SpringBootApplication
 public class HerokuApplication {
-    @GetMapping("/name")
+    @GetMapping(path = "/name.html")
     public void name(){ }
     @ResponseBody
     public static void main(String[] args) {
