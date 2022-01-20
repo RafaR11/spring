@@ -14,6 +14,7 @@ import java.lang.reflect.Array;
 @SpringBootApplication
 public class HerokuApplication {
     @GetMapping(value = "/name")
+    public void name(){ }
     @ResponseBody
     public static void main(String[] args) {
 
