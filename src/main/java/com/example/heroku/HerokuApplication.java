@@ -13,6 +13,7 @@ import java.lang.reflect.Array;
 @Controller
 @SpringBootApplication
 public class HerokuApplication {
+    @RequestMapping("/")
     @GetMapping("/imprimirArray")
     @ResponseBody
     String[] home(){
