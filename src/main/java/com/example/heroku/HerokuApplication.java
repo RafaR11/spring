@@ -13,12 +13,8 @@ import java.lang.reflect.Array;
 @Controller
 @SpringBootApplication
 public class HerokuApplication {
-    @RequestMapping(value = "/imprimirArray")
+    @GetMapping(value = "/name")
     @ResponseBody
-    String[] home(){
-        String[] array = new String[] {"rojo", "verde", "amarillo"};
-        return array;
-    }
     public static void main(String[] args) {
 
         SpringApplication.run(HerokuApplication.class, args);
