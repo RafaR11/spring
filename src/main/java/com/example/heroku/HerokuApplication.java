@@ -10,10 +10,8 @@ import org.springframework.web.bind.annotation.ResponseBody;
 @Controller
 @SpringBootApplication
 public class HerokuApplication {
-    @RequestMapping(value="/")  //or Method="POST"
-    public String welcome() {
-        return "/name";
-    }
+    @GetMapping(value="/name")
+    public void welcome() {}
     @ResponseBody
     public static void main(String[] args) {
 
