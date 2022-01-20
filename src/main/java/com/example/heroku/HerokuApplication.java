@@ -6,13 +6,16 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
+import java.lang.reflect.Array;
+
 @Controller
 @SpringBootApplication
 public class HerokuApplication {
-    @RequestMapping("/")
+    @RequestMapping("/imprimirArray")
     @ResponseBody
-    String home(){
-        return "hola Rafa!!!";
+    String[] home(){
+        String[] array = new String[] {"rojo", "verde", "amarillo"};
+        return array;
     }
     public static void main(String[] args) {
 
