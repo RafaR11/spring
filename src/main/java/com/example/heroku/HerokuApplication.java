@@ -11,7 +11,7 @@ import java.lang.reflect.Array;
 @Controller
 @SpringBootApplication
 public class HerokuApplication {
-    @RequestMapping("/imprimirArray")
+    @RequestMapping("/")
     @ResponseBody
     String[] home(){
         String[] array = new String[] {"rojo", "verde", "amarillo"};
