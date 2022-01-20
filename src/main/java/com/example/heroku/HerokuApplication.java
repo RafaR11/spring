@@ -12,10 +12,12 @@ import java.lang.reflect.Array;
 @Controller
 @SpringBootApplication
 public class HerokuApplication {
+    @RequestMapping("/")
     @PostMapping("/imprimirArray")
     @ResponseBody
     String[] home(){
-        return new String[] {"rojo", "verde", "amarillo"};
+        String[] array = new String[] {"rojo", "verde", "amarillo"};
+        return array;
     }
     public static void main(String[] args) {
 
